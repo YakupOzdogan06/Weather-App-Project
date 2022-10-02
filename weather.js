@@ -71,29 +71,27 @@ const getWeatherDataFromApi = async () => {
     //append vs. prepend
     list.prepend(createdLi);
 
-    //* capturing
-    createdLi.addEventListener("click", (e) => {
-      if (e.target.tagName == "IMG") {
-        e.target.src = e.target.src == iconUrl ? iconUrlAWS : iconUrl;
-      }
-    });
-
-    //* bubbling
-
-    // createdLi.addEventListener("click", (e) => {
-    //   alert(`Li element is clicked`);
-    //   window.location.href = "https://clarusway.com/";
+    //Capturing
+    // createdLi.addEventListener("click", (e)=>{
+    //     if(e.target.tagName == "IMG"){
+    //         e.target.src = (e.target.src == iconUrl) ? iconUrlAWS : iconUrl;
+    //     }
     // });
-    // createdLi.querySelector("figure").addEventListener("click", (e) => {
-    //   alert(`FIGURE element is clicked`);
-    // window.location.href = "https://clarusway.com/";
 
-    //   //* STOP BUBBLING
-    //   e.stopPropagation();
+    //Bubbling
+    // createdLi.addEventListener("click", (e)=>{
+    //     alert(`LI element is clicked!!`);
+    //     window.location.href = "https://clarusway.com";
     // });
-    // createdLi.querySelector("img").addEventListener("click", (e) => {
-    //   alert(`IMG element is clicked`);
-    // window.location.href = "https://clarusway.com/";
+    // createdLi.querySelector("figure").addEventListener("click", (e)=>{
+    //     alert(`FIGURE element is clicked!!`);
+    //     //STOP BUBBLING
+    //     //e.stopPropagation();
+    //     // window.location.href = "https://clarusway.com";
+    // });
+    // createdLi.querySelector("img").addEventListener("click", (e)=>{
+    //     alert(`IMG element is clicked!!`);
+    //     // window.location.href = "https://clarusway.com";
     // });
   } catch (error) {
     console.log(error);
@@ -104,13 +102,13 @@ const getWeatherDataFromApi = async () => {
   }
   form.reset();
 };
-
-//* window onload
+//window onload
 // document.querySelector(".cities").addEventListener("click", (e) => {
-//   if (e.target.tagName == "IMG") {
-//     alert("img is clicked");
-//   }
-// });
+//     if (e.target.tagName == "IMG") {
+//         alert("img is clicked!!!")
+//     }
+// }
+// )
 
 //* Math.floor() => surekli asagiya yuvarlar   49.9-->49 yapar
 //* Math.ceil()  => sürekli yukariya yuvarlar  49.1-->50 yapar

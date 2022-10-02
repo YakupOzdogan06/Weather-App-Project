@@ -71,7 +71,7 @@ const getWeatherDataFromApi = async () => {
     //append vs. prepend
     list.prepend(createdLi);
 
-    // Capturing
+    //Capturing
     createdLi.addEventListener("click", (e) => {
       if (e.target.tagName == "IMG") {
         e.target.src = e.target.src == iconUrl ? iconUrlAWS : iconUrl;
